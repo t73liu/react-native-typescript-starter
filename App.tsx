@@ -1,23 +1,41 @@
+import * as Expo from 'expo';
 import * as React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {Text, View} from "react-native";
 
-export default class App extends React.Component<{}> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.ts to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
-  }
+interface State {
+    loading: boolean
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default class App extends React.Component<object, State> {
+    constructor(props: object) {
+        super(props);
+        this.state = {
+            loading: true
+        };
+    }
+
+    async componentDidMount() {
+        console.log("Mounting component and loading fonts");
+        await Expo.Font.loadAsync({
+            Roboto: require("native-base/Fonts/Roboto.ttf"),
+            Roboto_medium: require("native-base/Fonts/Roboto_medium.ttf"),
+            Ionicons: require("@expo/vector-icons/fonts/Ionicons.ttf"),
+        });
+        this.setState({
+            loading: false
+        });
+    }
+
+    render() {
+        if (this.state.loading) {
+            return <Expo.AppLoading/>;
+        }
+        return (
+            <View>
+                <Text>Open up App.ts to start working on your app!</Text>
+                <Text>Changes you make will automatically reload.</Text>
+                <Text>Shake your phone to open the developer menu.</Text>
+            </View>
+        );
+    }
+}
