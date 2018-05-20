@@ -29,6 +29,7 @@
     "ios": "react-native-scripts-ts ios",
     "test": "jest",
     "format": "npm-run-all format:*",
+    "format:json": "prettier --write {.,**}/*.json",
     "format:md": "prettier --write {.,**}/*.md",
     "format:ts": "prettier --write {.,**}/*.{ts,tsx} && tslint --fix -p ."
   },
@@ -38,14 +39,7 @@
         "useBabelrc": true
       }
     },
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
     "preset": "jest-expo",
     "testMatch": [
       "**/__tests__/**/*.[tj]s?(x)",

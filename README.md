@@ -2,7 +2,17 @@
 
 ## Features
 
-* TBD
+* UI Components
+  * native-base
+* Navigation
+  * react-navigation
+* Formatting
+  * prettier
+* Code Quality
+  * tslint
+  * tslint-react
+* Testing
+  * jest
 
 ## Setup
 
