@@ -1,5 +1,5 @@
-import { StatusBar, StyleSheet, Text, View, ViewStyle } from "react-native";
 import * as React from "react";
+import { StatusBar, StyleSheet, Text, View, ViewStyle } from "react-native";
 
 interface IAppStyle {
   readonly container: ViewStyle;

@@ -6,6 +6,9 @@
   * native-base
 * Navigation
   * react-navigation
+* State Management
+  * redux
+  * redux-persist
 * Formatting
   * prettier
 * Code Quality

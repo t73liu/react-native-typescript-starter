@@ -1,5 +1,7 @@
 {
   "expo": {
+    "name": "boilerplate",
+    "slug": "boilerplate",
     "sdkVersion": "27.0.0",
     "packagerOpts": {
       "sourceExts": ["ts", "tsx"],
