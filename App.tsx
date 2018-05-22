@@ -1,6 +1,17 @@
 import * as Expo from "expo";
 import * as React from "react";
-import { Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View, ViewStyle } from "react-native";
+
+interface IStyle {
+  container: ViewStyle;
+}
+
+const styles = StyleSheet.create<IStyle>({
+  container: {
+    flex: 1,
+    marginTop: StatusBar.currentHeight
+  }
+});
 
 interface IState {
   loading: boolean;
@@ -31,7 +42,7 @@ export default class App extends React.Component<object, IState> {
       return <Expo.AppLoading />;
     }
     return (
-      <View>
+      <View style={styles.container}>
         <Text>Open up App.ts to start working on your app!</Text>
         <Text>Changes you make will automatically reload.</Text>
         <Text>Shake your phone to open the developer menu.</Text>
