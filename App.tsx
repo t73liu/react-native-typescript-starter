@@ -1,23 +1,12 @@
 import * as Expo from "expo";
 import * as React from "react";
-import { StatusBar, StyleSheet, Text, View, ViewStyle } from "react-native";
+import MainScreen from "./src/MainScreen";
 
-interface IStyle {
-  container: ViewStyle;
+interface IAppState {
+  readonly loading: boolean;
 }
 
-const styles = StyleSheet.create<IStyle>({
-  container: {
-    flex: 1,
-    marginTop: StatusBar.currentHeight
-  }
-});
-
-interface IState {
-  loading: boolean;
-}
-
-export default class App extends React.Component<object, IState> {
+export default class App extends React.Component<object, IAppState> {
   constructor(props: object) {
     super(props);
     this.state = {
@@ -41,12 +30,6 @@ export default class App extends React.Component<object, IState> {
     if (this.state.loading) {
       return <Expo.AppLoading />;
     }
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.ts to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-      </View>
-    );
+    return <MainScreen />;
   }
 }
