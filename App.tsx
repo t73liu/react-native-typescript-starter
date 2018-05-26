@@ -1,6 +1,6 @@
 import * as Expo from "expo";
 import * as React from "react";
-import MainScreen from "./src/MainScreen";
+import RootContainer from "./src/RootContainer";
 
 interface IAppState {
   readonly loading: boolean;
@@ -30,6 +30,6 @@ export default class App extends React.Component<object, IAppState> {
     if (this.state.loading) {
       return <Expo.AppLoading />;
     }
-    return <MainScreen />;
+    return <RootContainer />;
   }
 }
