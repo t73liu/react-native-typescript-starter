@@ -14,7 +14,7 @@ import {
 } from "native-base";
 import React from "react";
 
-export default class TodoScreenContainer extends React.Component {
+export default class TodoScreen extends React.Component {
   public render() {
     return (
       <Container>
