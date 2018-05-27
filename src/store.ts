@@ -1,6 +1,6 @@
 import { combineReducers, createStore } from "redux";
 import { StateType } from "typesafe-actions";
-import { todoReducer } from "./home/state/todo-reducer";
+import todoReducer from "./todo/state/reducer";
 
 const rootReducer = combineReducers({
   todo: todoReducer

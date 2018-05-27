@@ -1,8 +1,8 @@
 import * as React from "react";
 import { StatusBar, StyleSheet, View, ViewStyle } from "react-native";
 import { Provider } from "react-redux";
-import MainScreenContainer from "./home/container/MainScreenContainer";
 import store from "./store";
+import TodoScreenContainer from "./todo/container/TodoScreenContainer";
 
 interface IAppStyle {
   readonly container: ViewStyle;
@@ -20,7 +20,7 @@ export default class RootContainer extends React.Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <MainScreenContainer />
+          <TodoScreenContainer />
         </View>
       </Provider>
     );
