@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StatusBar, StyleSheet, View, ViewStyle } from "react-native";
 import { Provider } from "react-redux";
-import { MainScreenContainer } from "./home/container/MainScreenContainer";
+import MainScreenContainer from "./home/container/MainScreenContainer";
 import store from "./store";
 
 interface IAppStyle {
