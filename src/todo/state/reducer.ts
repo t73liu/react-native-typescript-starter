@@ -1,8 +1,9 @@
 import { AnyAction } from "redux";
+import { ITodo } from "./models";
 
 export default function todoReducer(
-  state: object[] = [],
+  state: ITodo[] = [],
   action: AnyAction
-): object[] {
+): ITodo[] {
   return state;
 }
