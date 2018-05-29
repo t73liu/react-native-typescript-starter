@@ -11,15 +11,8 @@ export default function todoReducer(
   switch (action.type) {
     case getType(todos.add):
       return [...state, action.payload];
-    case getType(todos.toggle):
-      return state.map(
-        todo =>
-          todo.title === action.payload
-            ? { ...todo, completed: !todo.completed }
-            : todo
-      );
     case getType(todos.remove):
-      return state.filter(todo => todo.title !== action.payload);
+      return state.filter(todo => todo.id !== action.payload);
     default:
       return state;
   }

@@ -36,7 +36,7 @@ export default class TodoScreen extends React.Component<
         <Header>
           <Left />
           <Body>
-            <Title>To Do List!!</Title>
+            <Title>To Do List</Title>
           </Body>
           <Right />
         </Header>
