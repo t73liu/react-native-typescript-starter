@@ -10,6 +10,7 @@ import {
   Title
 } from "native-base";
 import React from "react";
+import { StyleSheet, ViewStyle } from "react-native";
 import TodoListContainer from "../container/TodoListContainer";
 
 interface ITodoScreenProps {
@@ -19,6 +20,16 @@ interface ITodoScreenProps {
 interface ITodoScreenState {
   inputValue: string;
 }
+
+interface IInputStyle {
+  readonly input: ViewStyle;
+}
+
+const styles = StyleSheet.create<IInputStyle>({
+  input: {
+    marginTop: 5
+  }
+});
 
 export default class TodoScreen extends React.Component<
   ITodoScreenProps,
@@ -40,16 +51,15 @@ export default class TodoScreen extends React.Component<
           </Body>
           <Right />
         </Header>
+        <Item rounded={true} style={styles.input}>
+          <Input
+            placeholder="Add To Do"
+            value={inputValue}
+            onChangeText={this.handleChange}
+            onSubmitEditing={this.handleAdd}
+          />
+        </Item>
         <Content>
-          <Item regular={true}>
-            <Input
-              placeholder="Add To Do"
-              value={inputValue}
-              onChangeText={this.handleChange}
-              onSubmitEditing={this.handleAdd}
-              blurOnSubmit={true}
-            />
-          </Item>
           <TodoListContainer />
         </Content>
       </Container>
