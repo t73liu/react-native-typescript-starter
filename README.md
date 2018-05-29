@@ -9,6 +9,7 @@
 * State Management
   * redux
   * redux-persist
+  * typesafe-actions
 * Formatting
   * prettier
 * Code Quality
