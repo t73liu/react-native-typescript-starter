@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store";
 import TodoScreenContainer from "./todo/container/TodoScreenContainer";
+import { AdMobBanner } from "expo";
 
 interface IAppStyle {
   readonly container: ViewStyle;
@@ -24,6 +25,11 @@ export default class RootContainer extends React.Component {
         <PersistGate persistor={persistor} loading={<Expo.AppLoading />}>
           <View style={styles.container}>
             <TodoScreenContainer />
+            <AdMobBanner
+              bannerSize="smartBannerLandscape"
+              adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
+              testDeviceID="EMULATOR"
+            />
           </View>
         </PersistGate>
       </Provider>
