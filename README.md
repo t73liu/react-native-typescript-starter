@@ -5,7 +5,7 @@
 * UI Components
   * native-base
 * Navigation
-  * react-navigation
+  * react-navigation (currently not used)
 * State Management
   * redux
   * redux-persist
@@ -17,6 +17,8 @@
   * tslint-react
 * Testing
   * jest
+
+Following the style guide provided by: https://github.com/piotrwitek/react-redux-typescript-guide
 
 ## Setup
 
