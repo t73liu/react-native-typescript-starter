@@ -1,11 +1,10 @@
-import * as Expo from "expo";
+import { AdMobBanner, AppLoading } from "expo";
 import * as React from "react";
 import { StatusBar, StyleSheet, View, ViewStyle } from "react-native";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import store, { persistor } from "./store";
 import TodoScreenContainer from "./todo/container/TodoScreenContainer";
-import { AdMobBanner } from "expo";
 
 interface IAppStyle {
   readonly container: ViewStyle;
@@ -22,7 +21,7 @@ export default class RootContainer extends React.Component {
   public render() {
     return (
       <Provider store={store}>
-        <PersistGate persistor={persistor} loading={<Expo.AppLoading />}>
+        <PersistGate persistor={persistor} loading={<AppLoading />}>
           <View style={styles.container}>
             <TodoScreenContainer />
             <AdMobBanner

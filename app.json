@@ -1,11 +1,25 @@
 {
   "expo": {
-    "name": "boilerplate",
-    "slug": "boilerplate",
+    "name": "typescript-starter",
+    "description": "React-Native TypeScript To-Dos using Redux & NativeBase",
+    "slug": "typescript-starter",
+    "version": "1.0.0",
+    "githubUrl": "https://github.com/t73liu/react-native-typescript-starter",
     "sdkVersion": "27.0.0",
+    "icon": "./assets/images/logo.png",
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "backgroundColor": "#CDC449"
+    },
     "packagerOpts": {
       "sourceExts": ["ts", "tsx"],
       "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    },
+    "ios": {
+      "bundleIdentifier": "io.github.t73liu.boilerplate"
+    },
+    "android": {
+      "package": "io.github.t73liu.boilerplate"
     }
   }
 }
