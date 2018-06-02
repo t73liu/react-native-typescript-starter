@@ -1,18 +1,15 @@
 import * as Expo from "expo";
 import * as React from "react";
-import RootContainer from "./src/RootContainer";
+import { RootContainer } from "./src/RootContainer";
 
 interface IAppState {
   readonly loading: boolean;
 }
 
 export default class App extends React.Component<object, IAppState> {
-  constructor(props: object) {
-    super(props);
-    this.state = {
-      loading: true
-    };
-  }
+  public readonly state: IAppState = {
+    loading: true
+  };
 
   public async componentDidMount() {
     console.log("Mounting component and loading fonts");
