@@ -65,11 +65,11 @@
     "native-base": "^2.4.5",
     "react": "^16.3.2",
     "react-native": "~0.55.4",
-    "react-navigation": "^2.2.2",
+    "react-navigation": "^2.2.3",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
     "redux-observable": "^1.0.0-beta.1",
-    "redux-persist": "^5.9.1",
+    "redux-persist": "^5.10.0",
     "rxjs": "^6.2.0",
     "typesafe-actions": "^2.0.4"
   },

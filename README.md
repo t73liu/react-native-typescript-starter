@@ -5,9 +5,10 @@
 - UI Components
   - native-base
 - Navigation
-  - react-navigation (currently not used)
+  - react-navigation
 - State Management
   - redux
+  - redux-observable
   - redux-persist
   - typesafe-actions
 - Formatting

@@ -6092,9 +6092,9 @@ react-navigation-tabs@0.5.1:
     react-native-safe-area-view "^0.7.0"
     react-native-tab-view "^1.0.0"
 
-react-navigation@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.2.2.tgz#5c01f8f25850fbe73e96e148fea97912d9317485"
+react-navigation@^2.2.3:
+  version "2.2.3"
+  resolved "https://registry.yarnpkg.com/react-navigation/-/react-navigation-2.2.3.tgz#59d7ac0c9e7f27c1c276a71aadb1495ee395aebb"
   dependencies:
     clamp "^1.0.1"
     create-react-context "^0.2.1"
@@ -6265,9 +6265,9 @@ redux-observable@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/redux-observable/-/redux-observable-1.0.0-beta.1.tgz#6b4b5d4bff69539b12c0f12cbbbaa6a6c28997b6"
 
-redux-persist@^5.9.1:
-  version "5.9.1"
-  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.9.1.tgz#83bd4abd526ef768f63fceee338fa9d8ed6552d6"
+redux-persist@^5.10.0:
+  version "5.10.0"
+  resolved "https://registry.yarnpkg.com/redux-persist/-/redux-persist-5.10.0.tgz#5d8d802c5571e55924efc1c3a9b23575283be62b"
 
 redux@4.0.0, redux@^3.6.0, redux@^4.0.0:
   version "4.0.0"
