@@ -10,7 +10,7 @@ export default function todoReducer(
 ): ILog[] {
   switch (action.type) {
     case getType(logs.add):
-      return [...state, action.payload];
+      return [action.payload, ...state];
     case getType(logs.clear):
       return [];
     default:
