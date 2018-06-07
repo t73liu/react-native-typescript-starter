@@ -11,4 +11,7 @@ const mapDispatchToProps = (dispatch: Dispatch) =>
     dispatch
   );
 
-export default connect(null, mapDispatchToProps)(TodoScreen);
+export default connect(
+  null,
+  mapDispatchToProps
+)(TodoScreen);

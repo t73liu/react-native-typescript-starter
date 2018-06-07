@@ -2,21 +2,21 @@
 
 ## Features
 
-* UI Components
-  * native-base
-* Navigation
-  * react-navigation (currently not used)
-* State Management
-  * redux
-  * redux-persist
-  * typesafe-actions
-* Formatting
-  * prettier
-* Code Quality
-  * tslint
-  * tslint-react
-* Testing
-  * jest
+- UI Components
+  - native-base
+- Navigation
+  - react-navigation (currently not used)
+- State Management
+  - redux
+  - redux-persist
+  - typesafe-actions
+- Formatting
+  - prettier
+- Code Quality
+  - tslint
+  - tslint-react
+- Testing
+  - jest
 
 Following the style guide provided by: https://github.com/piotrwitek/react-redux-typescript-guide
 
