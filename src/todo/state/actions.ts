@@ -8,5 +8,5 @@ export const add = createAction("TODO_ADD", resolve => {
 });
 
 export const remove = createAction("TODO_REMOVE", resolve => {
-  return (id: string) => resolve(id);
+  return (todo: ITodo) => resolve(todo);
 });

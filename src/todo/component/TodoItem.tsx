@@ -3,13 +3,13 @@ import React from "react";
 import { ITodo } from "../state/models";
 
 interface ITodoItemProps {
-  removeToDo: (id: string) => any;
+  removeToDo: (todo: ITodo) => any;
   todo: ITodo;
 }
 
 export const TodoItem: React.SFC<ITodoItemProps> = props => {
   const pressButton = () => {
-    props.removeToDo(props.todo.id);
+    props.removeToDo(props.todo);
   };
 
   return (
