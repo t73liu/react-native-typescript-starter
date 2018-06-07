@@ -29,12 +29,7 @@ export const LogScreen: SFC<ILogoScreenProps> = props => {
           <Title>Log List</Title>
         </Body>
         <Right>
-          <Button
-            color={"white"}
-            iconRight={true}
-            transparent={true}
-            onPress={pressButton}
-          >
+          <Button iconRight={true} transparent={true} onPress={pressButton}>
             <Icon name="trash" />
           </Button>
         </Right>
