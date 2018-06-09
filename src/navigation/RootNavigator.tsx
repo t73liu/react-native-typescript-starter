@@ -1,8 +1,8 @@
 import { Button, Footer, FooterTab, Text } from "native-base";
 import React from "react";
 import { createBottomTabNavigator } from "react-navigation";
-import LogScreenContainer from "./log/container/LogScreenContainer";
-import TodoScreenContainer from "./todo/container/TodoScreenContainer";
+import LogScreenContainer from "../log/container/LogScreenContainer";
+import TodoScreenContainer from "../todo/container/TodoScreenContainer";
 
 export default createBottomTabNavigator(
   {

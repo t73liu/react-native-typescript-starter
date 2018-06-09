@@ -4,8 +4,8 @@ import React, { SFC } from "react";
 import { StatusBar, StyleSheet, ViewStyle } from "react-native";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
+import RootNavigator from "./navigation/RootNavigator";
 import { persistor, store } from "./store";
-import TabNavigation from "./TabNavigation";
 
 interface IRootStyle {
   readonly container: ViewStyle;
@@ -23,7 +23,7 @@ export const RootContainer: SFC = () => {
     <Provider store={store}>
       <PersistGate persistor={persistor} loading={<AppLoading />}>
         <Container style={styles.container}>
-          <TabNavigation />
+          <RootNavigator />
           <AdMobBanner
             bannerSize="smartBannerLandscape"
             adUnitID="ca-app-pub-3940256099942544/6300978111" // Test ID, Replace with your-admob-unit-id
