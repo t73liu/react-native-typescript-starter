@@ -1,4 +1,4 @@
-# React-Native TypeScript Starter
+# [React-Native TypeScript Starter](https://expo.io/@t73liu/typescript-starter)
 
 ## Features
 
