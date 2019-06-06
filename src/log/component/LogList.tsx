@@ -9,6 +9,10 @@ interface ILogListProps {
 
 export const LogList: React.SFC<ILogListProps> = props => {
   return (
-    <List>{props.logList.map(log => <LogItem key={log.id} log={log} />)}</List>
+    <List>
+      {props.logList.map(log => (
+        <LogItem key={log.id} log={log} />
+      ))}
+    </List>
   );
 };

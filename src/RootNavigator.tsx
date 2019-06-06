@@ -1,10 +1,10 @@
 import { Button, Footer, FooterTab, Text } from "native-base";
 import React from "react";
-import { createBottomTabNavigator } from "react-navigation";
-import LogScreenContainer from "../log/container/LogScreenContainer";
-import TodoScreenContainer from "../todo/container/TodoScreenContainer";
+import { createAppContainer, createBottomTabNavigator } from "react-navigation";
+import LogScreenContainer from "./log/container/LogScreenContainer";
+import TodoScreenContainer from "./todo/container/TodoScreenContainer";
 
-export default createBottomTabNavigator(
+const RootNavigator = createBottomTabNavigator(
   {
     ToDo: TodoScreenContainer,
     Logs: LogScreenContainer
@@ -38,3 +38,7 @@ export default createBottomTabNavigator(
     }
   }
 );
+
+const RootNavigatorContainer = createAppContainer(RootNavigator);
+
+export default RootNavigatorContainer;

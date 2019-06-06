@@ -1,22 +1,27 @@
 {
   "expo": {
-    "name": "typescript-starter",
-    "description": "React-Native TypeScript To-Dos using Redux & NativeBase",
+    "name": "TypeScript To-Do App",
+    "description": "TypeScript To-Do app using Redux",
     "slug": "typescript-starter",
-    "version": "1.0.0",
+    "privacy": "public",
+    "sdkVersion": "33.0.0",
+    "platforms": ["ios", "android"],
+    "version": "2.0.0",
     "githubUrl": "https://github.com/t73liu/react-native-typescript-starter",
-    "sdkVersion": "28.0.0",
-    "icon": "./assets/images/logo.png",
+    "orientation": "portrait",
+    "icon": "./assets/logo.png",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#CDC449"
     },
-    "packagerOpts": {
-      "sourceExts": ["ts", "tsx"],
-      "transformer": "node_modules/react-native-typescript-transformer/index.js"
+    "updates": {
+      "fallbackToCacheTimeout": 0
     },
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier": "io.github.t73liu.boilerplate"
+      "bundleIdentifier": "io.github.t73liu.boilerplate",
+      "supportsTablet": true
     },
     "android": {
       "package": "io.github.t73liu.boilerplate"
